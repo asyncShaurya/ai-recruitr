@@ -10,7 +10,7 @@ import { generateUUID } from '~/lib/utils';
 const upload = () => {
     const {auth, isLoading, fs, ai, kv} = usePuterStore();
     const navigate = useNavigate();
-    const [isProcesssing, setIsProcessing] = useState(true);
+    const [isProcesssing, setIsProcessing] = useState(false);
     const [statusText, setStatusText] = useState('');
     const [file, setFile] = useState<File | null>(null);
 
